@@ -20,7 +20,7 @@ static sanitize(string){
       if (odds.includes(word)) {
         return word;
       } else {
-        return word.charAt(0).toUpperCase() + word.slice(1);
+        return this.capitalize(word)
       }
     });
     return mappped.join(' ');
